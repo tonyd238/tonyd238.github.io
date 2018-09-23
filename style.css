@@ -1,3 +1,4 @@
+
 body{
 	background-color: #ffffff; 
 	font-family: Roboto;
@@ -8,19 +9,23 @@ img{
 	height: auto;
 }
 .content{
+	
 	margin-left: auto;
 	margin-right: auto;
 	width: 66%;
 	 
 }
 .header{
+	width: 100%;
+	position: relative;
 	background-color: #cfe5ef;
 	height: 150px;
-
 }
-
+.header-nav-menu{
+	width: auto;
+	float: left;
+}
 .header-nav-menu ul{
-	padding-left: 30%;
 	margin-top: 21px;
 }
 
@@ -30,7 +35,7 @@ img{
 	padding-left:18px; 
 	color: #333333;
 	font-weight: bold;
-	display: inline;
+	display: inline-block;
 	list-style: none;
 
 }
@@ -60,7 +65,6 @@ img{
 	position: relative;
 }
 .hm-parent:hover{
-	padding-top: 3px;
 	padding-bottom: 8px;
 	border-radius: 2px;
 background-color: #fff;
@@ -69,7 +73,6 @@ background-color: #fff;
 	position: relative;
 }
 .hm-parent-ui:hover{
-	padding-top: 3px;
 	padding-bottom: 8px;
 	border-radius: 2px;
 background-color: #fff;
@@ -137,7 +140,7 @@ ul.hide-menu-ui {
 	text-decoration: none;
 	color: #333333;
 	font-weight: normal;
-	margin-bottom: 12px;
+
 
 }
 .hide-menu a:hover{
@@ -166,13 +169,22 @@ ul.hide-menu-ui {
 	display:inline-block;
 }
 .button{
+	position: relative;
+	cursor: pointer;
+	width: 46px;
+	height: 23px;
 	background-color: #ffffff;
 	padding: 12px 26px; 
 	text-decoration: none;
 	color: #333333;
 	display: inline-block;
+	margin-top: 7px;
 	float: right;
-	margin-top: -49px; 
+}
+.button span{
+	top: 12px;
+	left: 27px;
+	position: absolute;
 }
 .clearfix{
 	content: '';
