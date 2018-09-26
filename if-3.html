@@ -3,6 +3,9 @@
 <head>
 	<link rel="stylesheet" href="iframe-style.css">
 	<meta charset="UTF-8">
+			<link rel="stylesheet" href="colors.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="colors.js"></script>
 	<title>Document</title>
 </head>
 <body>
@@ -57,7 +60,7 @@
 
 		<div class="frame-content">
 		<div class="frame-bp">
-			<img src="images/frame-backpack-no2.jpg" alt="">
+			<img id="image-n" src="bp-colors/no_2/red.jpg" alt="">
 			<ul>
 				<li><span class="red">Материал:</span> полиэстер</li>
 				<li><span class="red">Вес:</span> 550 гр.</li>
@@ -70,8 +73,38 @@
 		</div>
 		<div class="frame-text">
 			<h2>Kanken No. 2</h2>
-			<span>Выберите цвет:<font color="#d1222f">Ox Red/Royal Blue</font></span>
-			<img src="images/color-scheme.png" alt="">
+			<span>Выберите цвет:<font id="colorname" color="#d1222f">Deep Red</font></span>
+			<div class="color-wrap">
+				<div class="color-group">
+					<div class="color-item">
+				<label class="round" for="" id="red-n">
+				<input type="radio">
+				</label>
+			</div>
+			<div class="color-item">
+				<label class="round" for="" id="royal-blue-n">
+				<input type="radio">
+				</label>
+			</div>
+
+			<div class="color-item">
+				<label class="round" for="" id="sand">
+				<input type="radio">
+				</label>
+			</div>
+
+			<div class="color-item">
+				<label class="round" for="" id="black-n">
+				<input type="radio">
+				</label>
+			</div>
+			<div class="color-item">
+				<label class="round" for="" id="navy">
+				<input type="radio">
+				</label>
+			</div>
+				</div>
+			</div>
 			<h2 style="font-weight: bold;">4200₽<sup><del>7000</del></sup></h2>
 			<p style="font-size:32px; margin: 0px;">Скидка <span style="color:#d1222f;display: inline;">- 40 %</span> до конца месяца</p>
 			<p style="font-size:32px;margin: 0px; ">Вы экономите<span style="color:#d1222f;display: inline;"> 2 800 руб.</span></p>

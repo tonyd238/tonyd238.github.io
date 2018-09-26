@@ -104,14 +104,13 @@ left: 55px;
 }
 .frame-bp{
 	width: 414px;
-	margin-left: 150px;
+	margin-left: 130px;
 	padding-top: 53px;
 	float: left;
 	margin-right: 110px;
 }
 .frame-text{
-	margin-right: 130px;
-	float: right;
+	float: left;
 	padding-top: 70px;
 }
 .frame-text h2{
