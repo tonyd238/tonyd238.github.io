@@ -1,1 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900&subset=cyrillic');
+@font-face{
+	font-family: 'Europe';
+	src:url(fonts/EuropeExt-Bold.woff);
+	font-weight:bold;
+	font-style:normal;
+}
+@font-face{
+	font-family: 'Europe';
+	src:url(fonts/EuropeExt_Normal.otf);
+	font-weight:normal;
+	font-style:normal;
+}
