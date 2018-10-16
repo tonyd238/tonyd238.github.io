@@ -725,3 +725,37 @@ box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.75);
 .wezom{
 margin-top: 85px;
 }
+.custom-prev{
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url(images/prev-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -64px 0px;
+	position: absolute;
+	left: -35px;
+	top: 49%;
+}
+.custom-next{
+	display:block;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url(images/next-sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	right: -35px;
+	top: 49%;
+}
+.custom-prev:hover{
+	background-position: -32px 0px;
+}
+.custom-next:hover{
+	background-position: -32px 0px;
+}
+.custom-prev:active{
+	background-position: 0px 0px;;
+}
+.custom-next:active{
+	background-position: -64px 0px;
+}
