@@ -779,3 +779,9 @@ margin-top: 85px;
 		display: none;
 	}
 }
+@media(max-width: 1048px){
+	.custom-next.slick-arrow,.custom-prev.slick-arrow{
+		width: 0px;
+		display: none;
+	}
+}
