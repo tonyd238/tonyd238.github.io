@@ -253,13 +253,13 @@ ul{
 	color: #FFFFFF;
 }
 .short-stats{
+	position: relative;
+	z-index: 999;
 	margin-bottom: 60px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	height: 240px;
-	left: 0px;
-	top: 647px;
 	background: linear-gradient(92.24deg, rgba(255, 127, 0, 0.8) 0.34%, rgba(255, 71, 71, 0.8) 101.32%);
 }
 .stat-unit{
