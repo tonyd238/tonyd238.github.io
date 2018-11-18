@@ -1,0 +1,79 @@
+.comment-slider{
+	position: relative;
+	width: 726px;
+	height: 335px;
+	margin: 60px auto 0px;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.comment{
+	position: relative;
+	display: block;
+	margin: 0px auto;
+	width: 726px;
+	height: 335px;
+	background: #FFFFFF;
+}
+.user-photo{
+	margin-left: 20px;
+	padding-top: 36px;
+}
+.user-content{
+	width: 365px;
+	position: absolute;
+	top: 46px;
+	left: 185px;
+}
+.user-name{
+	margin-bottom: 10px;
+	line-height: normal;
+font-size: 20px;
+font-weight: bold;
+color: #000000;
+}
+.city{
+	margin-bottom: 15px;
+	font-family: 'Arial',sans-serif;
+	font-style: normal;
+font-weight: 600;
+line-height: 21px;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: #F68621;
+}
+.user-text{
+	font-family: 'Museo Sans Cyrl 300';
+	line-height: 24px;
+font-size: 18px;
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+.comment > img{
+ position: absolute;
+ bottom: 0px;
+ right: 35px;
+
+}
+.previous{
+	cursor:pointer;
+	width: 35px;
+	height: 25px;
+	background: url(images/prev-arrow.png);
+	position: absolute;
+	top: 47%;
+	left: -95px;
+}
+.next{
+	cursor:pointer;
+	width: 35px;
+	height: 25px;
+	background: url(images/next-arrow.png);
+	position: absolute;
+	top: 47%;
+	right: -95px;
+}
+.next:hover,
+.previous:hover{
+	transform: scale(1.1);
+	transition: transform .5s;
+}
