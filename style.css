@@ -206,6 +206,7 @@ line-height: 49px;
 		display: none;
 	}
 	.mobile-header{
+		height: 160px;
 		display: block;
 		width: 100%;
 	}
@@ -264,9 +265,10 @@ line-height: 49px;
 
 	}
 	.mobile-header > img{
+		width: 80px;
 		display: inline-block;
-		margin-left: 16px;
-		margin-top: 14px;
+		margin-left: 45px;
+		margin-top: 40px;
 	}
 	.logo{
 		position: absolute;
@@ -309,17 +311,20 @@ line-height: 49px;
 	.mobile-navigation ul li{
 		font-weight: 600;
 		display: block;
-		margin-bottom: 26px;
+		margin-bottom: 55px;
 		color: #1A1A1A;
 		letter-spacing: -0.28px;
-		font-size: 22px;
+		font-size: 50px;
+	}
+	.mobile-navigation ul li:first-child{
+		margin-top: 250px;
 	}
 	.mobile-navigation span{
 		margin-top: 105px;
 		display: block;
 		text-align: center;
 		font-weight: bold;
-		font-size: 14px;
+		font-size: 45px;
 		color: #123A60;
 		letter-spacing: -0.35px;
 		text-align: center;
@@ -330,7 +335,7 @@ line-height: 49px;
 	}
 	.contacts-block img{
 		margin: 21px 15px;
-		height: 20px;
+		height: 55px;
 	}
 	.mobile-navigation .footer span{
 		font-size: 12px;
