@@ -2,101 +2,345 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Lorem ipsum</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<title>Document</title>
 </head>
 <body>
-	<div class="mobile-navigation">
-			<div class="nav-header">
-				<div class="close"><img src="images/Close.svg" style="
-    height: 80px;
-    margin-left: 30px;
-    margin-top: 20px;
-" alt=""></div>
-				<div class="user-icon"><img src="images/User.svg" style="
-    height: 80px;
-    margin-right: 30px;
-    margin-top: 20px;
-" alt=""></div>
-			</div>
-			<ul>
-				<li><a href="">Item One</a></li>
-				<li><a href="">Item Two</a></li>
-				<li><a href="">Item Three</a></li>
-				<li><a href="">Item Four</a></li>
-			</ul>
-			<span>Need Some Help?</span>
-			<div class="contacts-block">
-				<a href=""><img src="images/fb-blue.svg" alt=""></a>
-				<a href=""><img src="images/tw-blue.svg" alt=""></a>
-				<a href=""><img src="images/ut-blue.svg" alt=""></a>
-			</div>
-			<div class="footer">
-	<span>
-		Copyright © 2018
-	</span>
-</div>
-		</div>
-	<div class="mobile-header">
-
-		<img id="mobile-nav" src="images/Menu.svg" alt="">
-		<div class="logo"><img src="images/Logo.svg" style="height: 80px; margin-left: 100px; margin-top: 40px;" alt=""></div>
-		<img src="images/Icon.svg" style="height: 80px; float: right; margin-right: 45px; margin-top: 30px;" alt="">
-		
-	</div>
 	<div class="header">
-		<div class="head-content">
-			<div class="user-panel">
-				<a href=""><span style="font-weight: normal;margin-right: 14px;">Follow us!</span></a>
-				<a href=""><img src="images/fb.svg" valign="middle" alt=""></a>
-				<a href=""><img src="images/tw.svg" valign="middle" alt=""></a>
-				<a href=""><img src="images/ut.svg" valign="middle" alt=""></a>
-				<div class="help">
-					<div class="divider-l"></div>
-				<a href=""><span style="margin:0px 20px;">Help</span></a>
-				<div class="divider-r"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-2">
+					<div class="logo">
+						<div class="mobile-nav">
+						<a href=""><img src="img/nav-mobile.png" alt=""></a>
+					</div>
+						<img class="logo__image" src="img/logo.png" alt="">
+					</div>
 				</div>
-				<a href=""><span>Hello, User Name!</span><img src="images/down.svg" align="center" alt=""></a>
-			</div>	
+				<div class="col-10">
+					
+					<div class="navigation">
+							<ul class="navigation__menu">
+								<li class="navigation__item"><a href="">гостинница</a></li>
+								<li class="navigation__item"><a href="">гриль-паб</a></li>
+								<li class="navigation__item navigation__item_active"><a href="">гриль-паб</a></li>
+							</ul>
+							<div class="navigation__contacts">
+								<div class="contacts__item">
+									<img src="img/placeholder.png" alt="">
+									<span>ул. Марины Расковой, 3</span>
+								</div>
+								<div class="contacts__item">
+									<img src="img/phone-call.png" alt="">
+									<span>(044) 546-45-45</span>
+								</div>
+									<select name="language" class="language-selection">
+										<option class="selection__item" value="RU">RU</option>
+										<option class="selection__item" value="UK">UK</option>
+									</select>
+							</div>
+					</div>
+				<div class="sub-navigation">
+					<a href="" class="sub-navigation__item">Гриль-паб</a>
+					<a href="" class="sub-navigation__item">Меню</a>
+					<a href="" class="sub-navigation__item sub-navigation__item_active">Счастливые часы</a>
+					<a href="" class="sub-navigation__item">Ивенты</a>
+					<a href="" class="sub-navigation__item">Спортивные события</a>
+				</div>
+			</div>
 		</div>
-		<nav class="navigation">
-			<img src="images/Logo.svg" alt="">
-			<ul>
-			<li><a href="">Item One</a></li>
-			<li><a href="">Item Two</a></li>
-			<li><a href="">Item Three</a></li>
-			<li><a href="">Item Four</a></li>
-		</ul>
-		<a href=""><img class="icon" src="images/Icon.svg" valign="middle" alt=""></a>
-		<a href=""><span>Dropdown</span></a>
-		<a href=""><img src="images/down-blue.svg" valign="middle" style="margin-right: 30px;" alt=""></a>
-		<label for="">
-			<span>logout</span>
-			<img src="images/lg.svg" alt="">
-			<input type="button">
-		</label>
-	</nav>
 	</div>
+<div class="description-block">
+				<div class="container">
+				<div class="row">
+						<ul class="breadcrumbs">
+					<li class="breadcrumbs__item">
+						<a href="">Главная |</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="">Гриль-паб |</a>
+					</li>
+					<li class="breadcrumbs__item breadcrumbs__item_active">
+						Счастливые часы
+					</li>
+					</ul>
+				</div>
+					<div class="row">
+						<div class="col-7">
+						<div class="description-block-heading">
+							<h1>Счастливые часы</h1>
+							<h2>в гриль-пабе barbaris</h2>
+							<hr>
+							<hr>
+						</div>
+					</div>
+					</div>
+		<div class="row">
+			<div class="col-4">
+			<p class="description-block__text">
+				Ни в чем себе не отказывай и наслажайся  потрясающе вкусными блюдами по супер-ценам
+			</p>
+		</div>
+		</div>
+		
+			<div class="row">
 
-<div class="main">
-	<img class="main-image" src="images/photo.png" alt="">
-	<div class="wrapper">
-		<h1>Lorem Ipsum Dolor</h1>
-	<p>Vestibulum vehicula molestie augue, et suscipit risus ullamcorper ut. Ut felis lacus, laoreet a vehicula vitae, pulvinar iaculis est. Maecenas semper purus fringilla diam posuere, vel lacinia mi convallis. Proin euismod turpis orci, ut consectetur sem accumsan vel. Donec eu metus nec dolor venenatis ullamcorper. Duis eu ultrices elit. Suspendisse gravida urna quis mi efficitur elementum. Curabitur sagittis purus id nulla rhoncus, sit amet facilisis elit lacinia. Nunc turpis risus, accumsan ac sapien at, molestie malesuada eros. Fusce hendrerit rhoncus sapien at viverra.</p>
+					<div class="flexbox">
+						<div class="circle-item">
+						<div class="circle-picture">
+						<img src="img/calendar.png" alt="">
+					</div>
+					<div class="circle-picture__text">
+						ПН-ПТ
+					</div>
+					</div>
+					
+					<div class="circle-item">
+						
+					<div class="circle-picture">
+						<img src="img/watches.png" alt="">
+					</div>
+					<div class="circle-picture__text">
+						12.00-15.00
+					</div>
+					</div>
+					</div>
+		
+			</div>
 	</div>
 </div>
-<div class="center">
-	<p>Mauris pretium ipsum in orci euismod pharetra sit amet eget orci. Integer tincidunt accumsan lectus, dictum scelerisque dolor ullamcorper sed. Quisque commodo elit non lectus maximus, a consequat orci cursus. Nunc malesuada quam id leo lacinia blandit. Praesent feugiat dolor vitae lectus sagittis, sit amet facilisis ipsum accumsan. </p>
-</div>
-	<div class="clearfix"></div>
+<div class="happy-hours-menu">
+	<div class="container">
+		<div class="menu__heading">
+			<h1>меню "счастливые часы"</h1>
+		</div>
+		<div class="select">
+			<img src="img/bbq.png" alt="">
+			<select name="" id="">
+				<option value="">Холодные закуски</option>
+				<option value="">Салаты</option>
+				<option value="">Горячие закуски</option>
+				<option value="">Первые блюда</option>
+				<option value="">Основные блюда</option>
+				<option value="">Паста</option>
+				<option value="">Гарниры</option>
+				<option value="">Соусы, хлеб</option>
+				<option value="">Блюда на мангале</option>
+				<option value="">Закуски к пиву</option>
+				<option value="">Десерты</option>
+				<option value="">Фреши</option>
+				<option value="">Алкоголь</option>
+				<option value="">Разливное пиво</option>
+			</select>
+		</div>
+		<div class="menu-items">
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/cheese.png" align="center" alt="">
+				</div>
+				<span>Холодные закуски</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/salad.png" align="center" alt="">
+				</div>
+				<span>Салаты</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/bacon.png" align="center" alt="">
+				</div>
+				<span>Горячие закуски</span>
+			</div>
+			<div class="menu__item menu__item_active">
+				<div class="menu__icon">
+					<img src="img/soup.png" align="center" alt="">
+				</div>
+				<span>Первые блюда</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/food.png" align="center" alt="">
+				</div>
+				<span>Основные блюда</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/pasta.png" align="center" alt="">
+				</div>
+				<span>Паста</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/french-fries.png" align="center" alt="">
+				</div>
+				<span>Гарниры</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/chili-sauce.png" align="center" alt="">
+				</div>
+				<span>Соусы, хлеб</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/bbq.png" align="center" alt="">
+				</div>
+				<span>Блюда на мангале</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/chips.png" align="center" alt="">
+				</div>
+				<span>Закуски к пиву</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/ice-cream.png" align="center" alt="">
+				</div>
+				<span>Десерты</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/fruit.png" align="center" alt="">
+				</div>
+				<span>Фреши</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/glass.png" align="center" alt="">
+				</div>
+				<span>Напитки</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/liquor.png" align="center" alt="">
+				</div>
+				<span>Алкоголь</span>
+			</div>
+			<div class="menu__item">
+				<div class="menu__icon">
+					<img src="img/beer-(1).png" align="center" alt="">
+				</div>
+				<span>Разливное пиво</span>
+			</div>
+		</div>
+	
+	
+			<div class="menu__image">
+				<div class="mobile-image">
+					<img src="img/menu-img-mobile.png" alt="">
+				</div>
+				<img src="img/menu-image.png" alt="">
+			</div>
+	
+	</div>
 
+</div>
+<div class="seo-content-block">
+	<div class="container">
+		<div class="seo-content__heading">
+			<h1>заголовок для seo контента</h1>
+		</div>
+		<div class="seo-content__text">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc egetLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc egetLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam
+			</p>
+			<div class="more-link">
+				<a href="">Подробнее</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="contacts">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<div class="contacts__info">
+					<div class="contacts__heading">
+						<h1>
+							контакты
+						</h1>
+					</div>
+					<div class="contact__item">
+						<img src="img/black-placeholder.png" align="center" alt="">
+						<span>ул. Марины Расковой, 3</span>
+					</div>
+					<div class="contact__item">
+						<img src="img/black-phonecall.png" align="center"  alt="">
+						<span>(044) 546-45-45</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="map-placeholder">
+		<img src="img/map-placeholder.png" alt="">
+	</div>
+</div>
 <div class="footer">
-	<span>
-		Copyright © 2018
-	</span>
+	<div class="container">
+	<div class="row">
+			<div class="col-8">
+		<img src="img/logo.png" align="center" alt="">
+	<ul class="footer-navigation">
+		<li class="footer-navigation__item"><a href="">гостинница</a></li>
+		<li class="footer-navigation__item"><a href="">гриль-паб</a></li>
+		<li class="footer-navigation__item"><a href="">бьюти-бар</a></li>
+	</ul>
+		</div>
+		<div class="col-4">
+			<div class="footer-contacts">
+				<div class="footer-contacts__item">
+					<img src="img/white-placeholder.png" align="center" alt="">
+					<span>ул. Марины Расковой, 3 </span>
+					<div class="social">
+						<a href=""><img src="img/insta.png" align="center" alt=""></a>
+					</div>
+				</div>
+				<div class="footer-contacts__item">
+					<img src="img/white-phonecall.png" align="center" alt="">
+					<span>(044) 546-45-45</span>
+					<div class="social">
+						<a href=""><img src="img/facebook.png" style="padding-right: 24px;" align="center" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="script.js"></script>
+<div class="mobile-footer">
+	<img src="img/logo.png" align="center" alt="">
+	<div class="footer-contacts">
+				<div class="footer-contacts__item">
+					<img src="img/placeholder.png" align="center" alt="">
+					<span>ул. Марины Расковой, 3 </span>
+					<div class="social">
+						<a href=""><img src="img/grey-insta.png" align="center" alt=""></a>
+					</div>
+				</div>
+				<div class="footer-contacts__item">
+					<img src="img/phone-call.png" align="center" alt="">
+					<span>(044) 546-45-45</span>
+					<div class="social">
+						<a href=""><img src="img/grey-facebook.png" style="padding-right: 24px;" align="center" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-copyright">
+	2018 Copyright
+</div>
+</div>
+<div class="copyright">
+	2018 Copyright
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
