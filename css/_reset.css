@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+*:focus {
+  outline: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+@-moz-document url-prefix() {
+  body {
+    letter-spacing: -0.09px;
+  }
+}

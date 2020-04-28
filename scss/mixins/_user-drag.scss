@@ -1,0 +1,8 @@
+@mixin user-drag($option){
+  user-drag: $option;
+  user-select: $option;
+  -moz-user-select: $option;
+  -webkit-user-drag: $option;
+  -webkit-user-select: $option;
+  -ms-user-select: $option;
+}

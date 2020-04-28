@@ -1,346 +1,623 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-	<link rel="stylesheet" href="css/bootstrap-grid.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Wezom test task</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <meta name="viewport" content="width= device-width, initial-scale = 1, user-scalable = no">
 </head>
-<body>
-	<div class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-2">
-					<div class="logo">
-						<div class="mobile-nav">
-						<a href=""><img src="img/nav-mobile.png" alt=""></a>
-					</div>
-						<img class="logo__image" src="img/logo.png" alt="">
-					</div>
-				</div>
-				<div class="col-10">
-					
-					<div class="navigation">
-							<ul class="navigation__menu">
-								<li class="navigation__item"><a href="">гостинница</a></li>
-								<li class="navigation__item"><a href="">гриль-паб</a></li>
-								<li class="navigation__item navigation__item_active"><a href="">гриль-паб</a></li>
-							</ul>
-							<div class="navigation__contacts">
-								<div class="contacts__item">
-									<img src="img/placeholder.png" alt="">
-									<span>ул. Марины Расковой, 3</span>
-								</div>
-								<div class="contacts__item">
-									<img src="img/phone-call.png" alt="">
-									<span>(044) 546-45-45</span>
-								</div>
-									<select name="language" class="language-selection">
-										<option class="selection__item" value="RU">RU</option>
-										<option class="selection__item" value="UK">UK</option>
-									</select>
-							</div>
-					</div>
-				<div class="sub-navigation">
-					<a href="" class="sub-navigation__item">Гриль-паб</a>
-					<a href="" class="sub-navigation__item">Меню</a>
-					<a href="" class="sub-navigation__item sub-navigation__item_active">Счастливые часы</a>
-					<a href="" class="sub-navigation__item">Ивенты</a>
-					<a href="" class="sub-navigation__item">Спортивные события</a>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="description-block">
-				<div class="container">
-				<div class="row">
-						<ul class="breadcrumbs">
-					<li class="breadcrumbs__item">
-						<a href="">Главная |</a>
-					</li>
-					<li class="breadcrumbs__item">
-						<a href="">Гриль-паб |</a>
-					</li>
-					<li class="breadcrumbs__item breadcrumbs__item_active">
-						Счастливые часы
-					</li>
-					</ul>
-				</div>
-					<div class="row">
-						<div class="col-7">
-						<div class="description-block-heading">
-							<h1>Счастливые часы</h1>
-							<h2>в гриль-пабе barbaris</h2>
-							<hr>
-							<hr>
-						</div>
-					</div>
-					</div>
-		<div class="row">
-			<div class="col-4">
-			<p class="description-block__text">
-				Ни в чем себе не отказывай и наслажайся  потрясающе вкусными блюдами по супер-ценам
-			</p>
-		</div>
-		</div>
-		
-			<div class="row">
-
-					<div class="flexbox">
-						<div class="circle-item">
-						<div class="circle-picture">
-						<img src="img/calendar.png" alt="">
-					</div>
-					<div class="circle-picture__text">
-						ПН-ПТ
-					</div>
-					</div>
-					
-					<div class="circle-item">
-						
-					<div class="circle-picture">
-						<img src="img/watches.png" alt="">
-					</div>
-					<div class="circle-picture__text">
-						12.00-15.00
-					</div>
-					</div>
-					</div>
-		
-			</div>
-	</div>
-</div>
-<div class="happy-hours-menu">
-	<div class="container">
-		<div class="menu__heading">
-			<h1>меню "счастливые часы"</h1>
-		</div>
-		<div class="select">
-			<img src="img/bbq.png" alt="">
-			<select name="" id="">
-				<option value="">Холодные закуски</option>
-				<option value="">Салаты</option>
-				<option value="">Горячие закуски</option>
-				<option value="">Первые блюда</option>
-				<option value="">Основные блюда</option>
-				<option value="">Паста</option>
-				<option value="">Гарниры</option>
-				<option value="">Соусы, хлеб</option>
-				<option value="">Блюда на мангале</option>
-				<option value="">Закуски к пиву</option>
-				<option value="">Десерты</option>
-				<option value="">Фреши</option>
-				<option value="">Алкоголь</option>
-				<option value="">Разливное пиво</option>
-			</select>
-		</div>
-		<div class="menu-items">
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/cheese.png" align="center" alt="">
-				</div>
-				<span>Холодные закуски</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/salad.png" align="center" alt="">
-				</div>
-				<span>Салаты</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/bacon.png" align="center" alt="">
-				</div>
-				<span>Горячие закуски</span>
-			</div>
-			<div class="menu__item menu__item_active">
-				<div class="menu__icon">
-					<img src="img/soup.png" align="center" alt="">
-				</div>
-				<span>Первые блюда</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/food.png" align="center" alt="">
-				</div>
-				<span>Основные блюда</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/pasta.png" align="center" alt="">
-				</div>
-				<span>Паста</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/french-fries.png" align="center" alt="">
-				</div>
-				<span>Гарниры</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/chili-sauce.png" align="center" alt="">
-				</div>
-				<span>Соусы, хлеб</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/bbq.png" align="center" alt="">
-				</div>
-				<span>Блюда на мангале</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/chips.png" align="center" alt="">
-				</div>
-				<span>Закуски к пиву</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/ice-cream.png" align="center" alt="">
-				</div>
-				<span>Десерты</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/fruit.png" align="center" alt="">
-				</div>
-				<span>Фреши</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/glass.png" align="center" alt="">
-				</div>
-				<span>Напитки</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/liquor.png" align="center" alt="">
-				</div>
-				<span>Алкоголь</span>
-			</div>
-			<div class="menu__item">
-				<div class="menu__icon">
-					<img src="img/beer-(1).png" align="center" alt="">
-				</div>
-				<span>Разливное пиво</span>
-			</div>
-		</div>
-	
-	
-			<div class="menu__image">
-				<div class="mobile-image">
-					<img src="img/menu-img-mobile.png" alt="">
-				</div>
-				<img src="img/menu-image.png" alt="">
-			</div>
-	
-	</div>
-
-</div>
-<div class="seo-content-block">
-	<div class="container">
-		<div class="seo-content__heading">
-			<h1>заголовок для seo контента</h1>
-		</div>
-		<div class="seo-content__text">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc egetLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc egetLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam
-			</p>
-			<div class="more-link">
-				<a href="">Подробнее</a>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="contacts">
-	<div class="container">
-		<div class="row">
-			<div class="col-3">
-				<div class="contacts__info">
-					<div class="contacts__heading">
-						<h1>
-							контакты
-						</h1>
-					</div>
-					<div class="contact__item">
-						<img src="img/black-placeholder.png" align="center" alt="">
-						<span>ул. Марины Расковой, 3</span>
-					</div>
-					<div class="contact__item">
-						<img src="img/black-phonecall.png" align="center"  alt="">
-						<span>(044) 546-45-45</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="map-placeholder">
-		<img src="img/map-placeholder.png" alt="">
-	</div>
+<body class="preload">
+<div class="wrap">
+    <div class="header">
+        <div class="container">
+            <div class="nav-trigger"></div>
+            <div class="menu-wrapper">
+                <ul class="nav">
+                    <li class="level-1-title">
+                        <a class="menu-title" href="javascript:void(0)">Меню</a>
+                        <ul class="level-1">
+                            <li class="back">Назад</li>
+                            <li><a href="javascript:void(0)">Ссылка 1</a></li>
+                            <li><a href="javascript:void(0)">Ссылка 2</a></li>
+                            <li><a href="javascript:void(0)">Ссылка 3</a></li>
+                            <li><a href="javascript:void(0)">Ссылка 4</a></li>
+                            <li><a href="javascript:void(0)">Ссылка 5</a></li>
+                            <li><a href="javascript:void(0)">Ссылка 6</a></li>
+                            <li><a href="javascript:void(0)">Ссылка 7</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="list-item" href="javascript:void(0);">главная</a></li>
+                    <li><a class="list-item active" href="javascript:void(0);">о компании</a></li>
+                    <li><a class="list-item" href="javascript:void(0);">ссылка 1</a></li>
+                    <li><a class="list-item" href="javascript:void(0);">ссылка 2</a></li>
+                    <li><a class="list-item" href="javascript:void(0);">ссылка 3</a></li>
+                    <ul class="phones">
+                        <li><a href="javascript:void(0);" class="number-mobile">+380 98 170 00 740</a></li>
+                        <li><a href="javascript:void(0);" class="number-mobile">+380 98 170 00 740</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <a id="login" href="javascript:void(0);" class="button login-button">
+                <span>вход</span>
+            </a>
+        </div>
+    </div>
+    <div class="header-under">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <img class="logo" src="/images/logo.png" alt="">
+                </div>
+                <div class="col-xs-9">
+                    <div class="flex-wrapper">
+                        <div class="phone-wrap">
+                            <a href="javascript:void(0);" class="phone-item">+380 98 170 00 740</a>
+                            <a href="javascript:void(0);" class="phone-item">+380 98 170 00 740</a>
+                            <a id="callback" href="javascript:void(0);" class="button phone-button"><span>перезвонить мне</span></a>
+                        </div>
+                        <div class="basket-wrapper">
+                            <div id="comparison" class="basket_group-button">
+                                <span class="counter hidden"></span>
+                                <img src="/images/svg/icon-comparison.svg" alt="">
+                                <span class="button-title">сравнение</span>
+                            </div>
+                            <div id="favorites" class="basket_group-button">
+                                <span class="counter hidden"></span>
+                                <img src="/images/svg/icon-favorites.svg" alt="">
+                                <span class="button-title">избранное</span>
+                            </div>
+                            <div id="basket" class="basket_group-button">
+                                <span class="counter">5</span>
+                                <img src="/images/svg/icon-basket.svg" alt="">
+                                <span class="button-title">корзина</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="menu">
+                        <div class="menu-heading">
+                            <div class="decor"><img src="/images/svg/burger.svg" alt=""></div>
+                            <span>Меню</span>
+                        </div>
+                        <ul class="menu-list">
+                            <li><a href="javascript:void(0);">Ссылка 1</a></li>
+                            <li><a href="javascript:void(0);">Ссылка 2</a></li>
+                            <li><a href="javascript:void(0);">Ссылка 3</a></li>
+                            <li><a href="javascript:void(0);">Ссылка 4</a></li>
+                            <li><a href="javascript:void(0);">Ссылка 5</a></li>
+                            <li><a href="javascript:void(0);">Ссылка 6</a></li>
+                            <li><a href="javascript:void(0);">Ссылка 7</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-9">
+                    <form class="search" id="search-form" action="">
+                        <input type="text" placeholder="Поиск по сайту" minlength="2">
+                        <div class="select-wrap">
+                            <select class="categories-select">
+                                <option value="0" selected>Все категории</option>
+                                <option value="1">Категория 1</option>
+                                <option value="2">Категория 2</option>
+                                <option value="3">Категория 3</option>
+                            </select>
+                        </div>
+                        <label class="button search-button">
+                            <span>поиск</span>
+                            <input type="submit">
+                        </label>
+                    </form>
+                    <div class="filter-wrapper tabs">
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#link-1">
+                                    <span class="list-image">
+                                               <img src="/images/svg/car-sedan.svg" alt="">
+                                           </span>
+                                    Ссылка 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#link-2">
+                                    <span class="list-image">
+                                       <img src="/images/svg/car-truck.svg" alt="">
+                                    </span>
+                                    Ссылка 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#link-3">
+                                    <span class="list-image">
+                                               <img src="/images/svg/car-rim.svg" alt="">
+                                           </span>
+                                    Ссылка 3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#link-4">
+                                    <span class="list-image">
+                                               <img src="/images/svg/motor-oil.svg" alt="">
+                                           </span>
+                                    Ссылка 4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#link-5">
+                                    <span class="list-image">
+                                                <img src="/images/svg/car-battery.svg" alt="">
+                                           </span>
+                                    Ссылка 5
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="link-1">
+                            <form action="" id="filter-1">
+                                <div class="inner-tabs">
+                                    <ul class="tab-list">
+                                        <li><a href="#tab-1-1">Tab 1</a></li>
+                                        <li><a href="#tab-1-2">Tab 2</a></li>
+                                    </ul>
+                                    <div id="tab-1-1">
+                                        <div class="flex-wrapper">
+                                            <div class="column">
+                                                <select name="1">
+                                                    <option value="0" selected disabled>Select 1</option>
+                                                    <option value="12">Option 1</option>
+                                                    <option value="13">Option 1</option>
+                                                    <option value="14">Option 1</option>
+                                                    <option value="15">Option 1</option>
+                                                    <option value="16">Option 1</option>
+                                                </select>
+                                            </div>
+                                            <div class="column">
+                                                <select name="2">
+                                                    <option value="0" selected disabled>Select 2</option>
+                                                    <option value="22">Option 2</option>
+                                                    <option value="23">Option 2</option>
+                                                    <option value="24">Option 2</option>
+                                                    <option value="25">Option 2</option>
+                                                    <option value="26">Option 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="column">
+                                                <select name="3">
+                                                    <option value="0" selected disabled>Select 3</option>
+                                                    <option value="32">Option 3</option>
+                                                    <option value="33">Option 3</option>
+                                                    <option value="34">Option 3</option>
+                                                    <option value="35">Option 3</option>
+                                                    <option value="36">Option 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="column">
+                                                <select name="4">
+                                                    <option value="0" selected disabled>Select 4</option>
+                                                    <option value="42">Option 4</option>
+                                                    <option value="43">Option 4</option>
+                                                    <option value="44">Option 4</option>
+                                                    <option value="45">Option 4</option>
+                                                    <option value="46">Option 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="flex-wrapper center">
+                                            <div class="column">
+                                                <select name="6">
+                                                    <option value="0" selected disabled>Select 6</option>
+                                                    <option value="62">Option 6</option>
+                                                    <option value="63">Option 6</option>
+                                                    <option value="64">Option 6</option>
+                                                    <option value="65">Option 6</option>
+                                                    <option value="66">Option 6</option>
+                                                </select>
+                                            </div>
+                                            <div class="column price-range">
+                                                <span>Цена</span>
+                                                <label>
+                                                    <input type="text">
+                                                    <span class="decoration"></span>
+                                                </label>
+                                                <label>
+                                                    <input type="text">
+                                                    <span class="decoration"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex-wrapper space-between button-wrapper">
+                                            <div class="button reset"><span>Очистить фильтр</span></div>
+                                            <label class="button confirm">
+                                                <span>Применить фильтр</span>
+                                                <input type="submit">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div id="tab-1-2"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="link-2">
+                            <form action="" id="filter-2">
+                                <div class="inner-tabs">
+                                    <ul class="tab-list">
+                                        <li><a href="#tab-2-1">Tab 1</a></li>
+                                        <li><a href="#tab-2-2">Tab 2</a></li>
+                                    </ul>
+                                    <div id="tab-2-1">
+                                        <div class="flex-wrapper">
+                                            <div class="column">
+                                                <select name="1">
+                                                    <option value="0" selected disabled>Select 1</option>
+                                                    <option value="12">Option 1</option>
+                                                    <option value="13">Option 1</option>
+                                                    <option value="14">Option 1</option>
+                                                    <option value="15">Option 1</option>
+                                                    <option value="16">Option 1</option>
+                                                </select>
+                                            </div>
+                                            <div class="column">
+                                                <select name="2">
+                                                    <option value="0" selected disabled>Select 2</option>
+                                                    <option value="22">Option 2</option>
+                                                    <option value="23">Option 2</option>
+                                                    <option value="24">Option 2</option>
+                                                    <option value="25">Option 2</option>
+                                                    <option value="26">Option 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="column">
+                                                <select name="3">
+                                                    <option value="0" selected disabled>Select 3</option>
+                                                    <option value="32">Option 3</option>
+                                                    <option value="33">Option 3</option>
+                                                    <option value="34">Option 3</option>
+                                                    <option value="35">Option 3</option>
+                                                    <option value="36">Option 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="column">
+                                                <select name="4">
+                                                    <option value="0" selected disabled>Select 4</option>
+                                                    <option value="42">Option 4</option>
+                                                    <option value="43">Option 4</option>
+                                                    <option value="44">Option 4</option>
+                                                    <option value="45">Option 4</option>
+                                                    <option value="46">Option 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="flex-wrapper center">
+                                            <div class="column">
+                                                <select name="6">
+                                                    <option value="0" selected disabled>Select 6</option>
+                                                    <option value="62">Option 6</option>
+                                                    <option value="63">Option 6</option>
+                                                    <option value="64">Option 6</option>
+                                                    <option value="65">Option 6</option>
+                                                    <option value="66">Option 6</option>
+                                                </select>
+                                            </div>
+                                            <div class="column price-range">
+                                                <span>Цена</span>
+                                                <label>
+                                                    <input type="text">
+                                                    <span class="decoration"></span>
+                                                </label>
+                                                <label>
+                                                    <input type="text">
+                                                    <span class="decoration"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex-wrapper space-between button-wrapper">
+                                            <div class="button reset"><span>Очистить фильтр</span></div>
+                                            <label class="button confirm">
+                                                <span>Применить фильтр</span>
+                                                <input type="submit">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div id="tab-2-2"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="link-3">
+                            <form action="" id="filter-3">
+                                <div class="inner-tabs">
+                                    <ul class="tab-list">
+                                        <li><a href="#tab-3-1">Tab 1</a></li>
+                                        <li><a href="#tab-3-2">Tab 2</a></li>
+                                    </ul>
+                                    <div id="tab-3-1"></div>
+                                    <div id="tab-3-2"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="link-4">
+                            <form action="" id="filter-4">
+                                <div class="inner-tabs">
+                                    <ul class="tab-list">
+                                        <li><a href="#tab-4-1">Tab 1</a></li>
+                                        <li><a href="#tab-4-2">Tab 2</a></li>
+                                    </ul>
+                                    <div id="tab-4-1"></div>
+                                    <div id="tab-4-2"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="link-5">
+                            <form action="" id="filter-5">
+                                <div class="inner-tabs">
+                                    <ul class="tab-list">
+                                        <li><a href="#tab-5-1">Tab 1</a></li>
+                                        <li><a href="#tab-5-2">Tab 2</a></li>
+                                    </ul>
+                                    <div id="tab-5-1"></div>
+                                    <div id="tab-5-2"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="container">
+            <div class="flex-wrapper space-between">
+                <h1>Карточки товаров</h1>
+                <a href="javascript:void(0)" class="catalog-link">Ссылка в каталог</a>
+            </div>
+            <div class="flex-wrapper catalog-wrap">
+                <div class="catalog-item">
+                    <div class="mark"><span>Mark</span></div>
+                    <a href="javascript:void(0)" class="catalog-item__title">
+                        Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany
+                    </a>
+                    <div class="catalog-item__rating-block">
+                        <div class="rating">
+                            <div class="stars-wrapper">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img src="/images/svg/star.svg" alt="">
+                            </div>
+                            <a href="javascript:void(0)">Отзывы(10)</a>
+                        </div>
+                        <div class="availability">В наличии:24шт.</div>
+                    </div>
+                    <div class="catalog-item__row">
+                        <div class="catalog-item__specs">
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/summer.svg" alt="">
+                                </div>
+                                <span>летняя</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/car.svg" alt="">
+                                </div>
+                                <span>легковая</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/new.svg" alt="">
+                                </div>
+                                <span>новая</span>
+                            </div>
+                        </div>
+                        <div class="catalog-item__image">
+                            <img src="/images/tire-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="catalog-item__tags">
+                        <div class="tag-item new">новинка</div>
+                        <div class="tag-item hit">хит</div>
+                        <div class="tag-item sale">скидка</div>
+                    </div>
+                    <div class="catalog-item__price">
+                        <div class="price-new">599 <span>грн.</span></div>
+                        <div class="price-old">1 250 грн.</div>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="javascript:void(0)" class="button buy-button">
+                            <span>купить товар</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item__favorites-wrapper">
+                        <a href="javascript:void(0)" class="item-compare"><span>Сравнить товар</span></a>
+                        <a href="javascript:void(0)" class="item-favorite"><span>В избранное</span></a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="mark"><span>Mark</span></div>
+                    <a href="javascript:void(0)" class="catalog-item__title">
+                        Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany
+                    </a>
+                    <div class="catalog-item__rating-block">
+                        <div class="rating">
+                            <div class="stars-wrapper">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="" src="/images/svg/star.svg" alt="">
+                                <img src="/images/svg/star.svg" alt="">
+                            </div>
+                            <a href="javascript:void(0)">Отзывы(10)</a>
+                        </div>
+                        <div class="availability">В наличии:24шт.</div>
+                    </div>
+                    <div class="catalog-item__row">
+                        <div class="catalog-item__specs">
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/summer.svg" alt="">
+                                </div>
+                                <span>летняя</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/new.svg" alt="">
+                                </div>
+                                <span>новая</span>
+                            </div>
+                        </div>
+                        <div class="catalog-item__image">
+                            <img src="/images/tire-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="catalog-item__tags">
+                        <div class="tag-item new">новинка</div>
+                        <div class="tag-item hit">хит</div>
+                    </div>
+                    <div class="catalog-item__price">
+                        <div class="price-new">599 <span>грн.</span></div>
+                        <div class="price-old">1 250 грн.</div>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="javascript:void(0)" class="button buy-button">
+                            <span>купить товар</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item__favorites-wrapper">
+                        <a href="javascript:void(0)" class="item-compare"><span>Сравнить товар</span></a>
+                        <a href="javascript:void(0)" class="item-favorite"><span>В избранное</span></a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="mark"><span>Mark</span></div>
+                    <a href="javascript:void(0)" class="catalog-item__title">
+                        Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany
+                    </a>
+                    <div class="catalog-item__rating-block">
+                        <div class="rating">
+                            <div class="stars-wrapper">
+                                <img class="" src="/images/svg/star.svg" alt="">
+                                <img class="" src="/images/svg/star.svg" alt="">
+                                <img class="" src="/images/svg/star.svg" alt="">
+                                <img class="" src="/images/svg/star.svg" alt="">
+                                <img src="/images/svg/star.svg" alt="">
+                            </div>
+                            <a href="javascript:void(0)">Без отзывов</a>
+                        </div>
+                        <div class="availability">В наличии:24шт.</div>
+                    </div>
+                    <div class="catalog-item__row">
+                        <div class="catalog-item__specs">
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/summer.svg" alt="">
+                                </div>
+                                <span>летняя</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/car.svg" alt="">
+                                </div>
+                                <span>легковая</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/new.svg" alt="">
+                                </div>
+                                <span>новая</span>
+                            </div>
+                        </div>
+                        <div class="catalog-item__image">
+                            <img src="/images/tire-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="catalog-item__tags">
+                        <div class="tag-item new">новинка</div>
+                    </div>
+                    <div class="catalog-item__price">
+                        <div class="price-new">9 570 <span>грн.</span></div>
+                        <div class="price-old">11 250 грн.</div>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="javascript:void(0)" class="button buy-button">
+                            <span>купить товар</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item__favorites-wrapper">
+                        <a href="javascript:void(0)" class="item-compare"><span>Сравнить товар</span></a>
+                        <a href="javascript:void(0)" class="item-favorite"><span>В избранное</span></a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="mark"><span>Mark</span></div>
+                    <a href="javascript:void(0)" class="catalog-item__title">
+                        Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany
+                    </a>
+                    <div class="catalog-item__rating-block">
+                        <div class="rating">
+                            <div class="stars-wrapper">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                                <img class="rated" src="/images/svg/star.svg" alt="">
+                            </div>
+                            <a href="javascript:void(0)">Отзывы(10)</a>
+                        </div>
+                        <div class="availability">В наличии:24шт.</div>
+                    </div>
+                    <div class="catalog-item__row">
+                        <div class="catalog-item__specs">
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/summer.svg" alt="">
+                                </div>
+                                <span>летняя</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-image">
+                                    <img src="/images/svg/car.svg" alt="">
+                                </div>
+                                <span>легковая</span>
+                            </div>
+                        </div>
+                        <div class="catalog-item__image">
+                            <img src="/images/tire-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="catalog-item__tags">
+                    </div>
+                    <div class="catalog-item__price">
+                        <div class="price-new">599 <span>грн.</span></div>
+                        <div class="price-old">1 250 грн.</div>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="javascript:void(0)" class="button buy-button">
+                            <span>купить товар</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item__favorites-wrapper">
+                        <a href="javascript:void(0)" class="item-compare"><span>Сравнить товар</span></a>
+                        <a href="javascript:void(0)" class="item-favorite"><span>В избранное</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="footer">
-	<div class="container">
-	<div class="row">
-			<div class="col-8">
-		<img src="img/logo.png" align="center" alt="">
-	<ul class="footer-navigation">
-		<li class="footer-navigation__item"><a href="">гостинница</a></li>
-		<li class="footer-navigation__item"><a href="">гриль-паб</a></li>
-		<li class="footer-navigation__item"><a href="">бьюти-бар</a></li>
-	</ul>
-		</div>
-		<div class="col-4">
-			<div class="footer-contacts">
-				<div class="footer-contacts__item">
-					<img src="img/white-placeholder.png" align="center" alt="">
-					<span>ул. Марины Расковой, 3 </span>
-					<div class="social">
-						<a href=""><img src="img/insta.png" align="center" alt=""></a>
-					</div>
-				</div>
-				<div class="footer-contacts__item">
-					<img src="img/white-phonecall.png" align="center" alt="">
-					<span>(044) 546-45-45</span>
-					<div class="social">
-						<a href=""><img src="img/facebook.png" style="padding-right: 24px;" align="center" alt=""></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
+    <div class="container"></div>
 </div>
-<div class="mobile-footer">
-	<img src="img/logo.png" align="center" alt="">
-	<div class="footer-contacts">
-				<div class="footer-contacts__item">
-					<img src="img/placeholder.png" align="center" alt="">
-					<span>ул. Марины Расковой, 3 </span>
-					<div class="social">
-						<a href=""><img src="img/grey-insta.png" align="center" alt=""></a>
-					</div>
-				</div>
-				<div class="footer-contacts__item">
-					<img src="img/phone-call.png" align="center" alt="">
-					<span>(044) 546-45-45</span>
-					<div class="social">
-						<a href=""><img src="img/grey-facebook.png" style="padding-right: 24px;" align="center" alt=""></a>
-					</div>
-				</div>
-			</div>
-			<div class="mobile-copyright">
-	2018 Copyright
-</div>
-</div>
-<div class="copyright">
-	2018 Copyright
-</div>
+<script src="/js/jquery.js"></script>
+<script src="/js/popup-slide.js"></script>
+<script src="/js/select2.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
 </body>
 </html>
