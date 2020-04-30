@@ -1,8 +1,0 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
-font-family: 'PT Sans', sans-serif;
-
-@font-face{
-	font-family: 'Bodoni Bold';
-	src:url('../fonts/Bodoni_bold.woff');
-	
-}

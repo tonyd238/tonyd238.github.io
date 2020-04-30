@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Wezom test task</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700;1,900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/index.css">
@@ -40,7 +40,8 @@
                     </ul>
                 </ul>
             </div>
-            <a id="login" href="javascript:void(0);" class="button login-button">
+            <a id="login" href="javascript:void(0);" data-touch="false" data-fancybox data-src="#login-form"
+               class="button login-button">
                 <span>вход</span>
             </a>
         </div>
@@ -56,7 +57,8 @@
                         <div class="phone-wrap">
                             <a href="javascript:void(0);" class="phone-item">+380 98 170 00 740</a>
                             <a href="javascript:void(0);" class="phone-item">+380 98 170 00 740</a>
-                            <a id="callback" href="javascript:void(0);" class="button phone-button"><span>перезвонить мне</span></a>
+                            <a id="callback" data-fancybox data-src="#recall-form" data-touch="false"
+                               href="javascript:void(0);" class="button phone-button"><span>перезвонить мне</span></a>
                         </div>
                         <div class="basket-wrapper">
                             <div id="comparison" class="basket_group-button">
@@ -101,7 +103,7 @@
                     </div>
                 </div>
                 <div class="col-xs-9">
-                    <form class="search" id="search-form" action="">
+                    <form class="search" id="search-form" action="#">
                         <input type="text" placeholder="Поиск по сайту" minlength="2">
                         <div class="select-wrap">
                             <select class="categories-select">
@@ -610,13 +612,177 @@
             </div>
         </div>
     </div>
+    <form id="login-form" action="#" onsubmit="$.fancybox.close();return false;">
+        <div data-fancybox-close class="fancybox-close-small"></div>
+        <div class="flex-wrapper">
+            <div class="column">
+                <div class="column-title">Вход в личный кабинет</div>
+                <div class="field-wrap email">
+                    <label>Ваш Email</label>
+                    <input type="email" minlength="1" placeholder="mikel_ivanov98@gmail.com">
+                </div>
+                <div class="field-wrap password">
+                    <label>Пароль</label>
+                    <input type="password" minlength="4" placeholder="*********">
+                </div>
+                <div class="control-group">
+                    <label class="control control-checkbox">
+                        Запомнить меня
+                        <input type="checkbox" checked="checked"/>
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
+
+                <div class="links-wrap">
+                    <a href="javascript:void(0)">Забыли пароль?</a>
+                    <a href="javascript:void(0)">Регистрация</a>
+                </div>
+
+                <label class="button login-form-button">
+                    <span>Войти в личный кабинет</span>
+                    <input type="submit">
+                </label>
+
+            </div>
+            <div class="column">
+                <div class="column-title">Войти с помощью</div>
+                <a href="javascript:void(0)" class="button social facebook"><span>Facebook</span></a>
+                <a href="javascript:void(0)" class="button social twitter"><span>Twitter</span></a>
+                <a href="javascript:void(0)" class="button social google"><span>Google</span></a>
+            </div>
+        </div>
+    </form>
+    <form id="recall-form" action="#" onsubmit="recallSubmit();return false">
+        <div data-fancybox-close class="fancybox-close-small"></div>
+        <div class="column-title">Перезвоните мне</div>
+        <div class="field-wrap phone">
+            <label>Номер телефона</label>
+            <input id="phone" type="text" minlength="17" placeholder="+38(0__) ___ - __ - __">
+        </div>
+        <div class="button-wrapper">
+            <label class="button">
+                <span>перезвоните мне</span>
+                <input type="submit">
+            </label>
+        </div>
+    </form>
 </div>
+
 <div class="footer">
-    <div class="container"></div>
+    <div class="top-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="block-title">Блок 1</div>
+                    <div class="letter-form">
+                        <div class="title-top">Будьте в курсе новостей и новинок!</div>
+                        <div class="title-bottom">Подписывайтесь на рассылку</div>
+                        <form action="#" onsubmit="letterSpam();return false;">
+                            <input type="email" placeholder="Укажите свой email для подписки" minlength="1">
+                            <label class="button">
+                                <span>подписаться</span>
+                                <input type="submit">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="flex-wrapper links-wrapper">
+                        <div class="links-block">
+                            <div class="block-title">Блок ссылок 1</div>
+                            <ul>
+                                <li><a href="javascript:void(0)">Ссылка 1</a></li>
+                                <li><a href="javascript:void(0)">Ссылка 2</a></li>
+                                <li><a href="javascript:void(0)">Ссылка 3</a></li>
+                                <li><a href="javascript:void(0)">Ссылка 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="links-block">
+                            <div class="block-title">Блок 2</div>
+                            <ul>
+                                <li><a href="javascript:void(0)">Ссылка 1</a></li>
+                                <li><a href="javascript:void(0)">Ссылка 2</a></li>
+                                <li><a href="javascript:void(0)">Ссылка 3</a></li>
+                                <li><a href="javascript:void(0)">Ссылка 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="links-block">
+                            <div class="block-title">Блок ссылок 3</div>
+                            <ul>
+                                <li><a href="javascript:void(0)">Ссылка 1</a></li>
+                                <li><a href="javascript:void(0)">Ссылка 2</a></li>
+                                <li><a href="javascript:void(0)">Ссылка 3</a></li>
+                                <li><a href="javascript:void(0)">Ссылка 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="logo-wrap">
+                        <div class="footer-logo">
+                            <img src="/images/logo-grey.png" alt="">
+                        </div>
+                        <div class="copyright">© Copyrith 2017. Тестовое задание Wezom</div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="flex-wrapper develop-wrap">
+                        <div class="footer-social">
+                            <a href="javascript:void(0)" class="social">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 9">
+                                    <path fill="#fff"
+                                          d="M999.77,1651.72c0.53,0.52,1.09,1,1.57,1.57a4.423,4.423,0,0,1,.56.8,0.577,0.577,0,0,1-.36.9h-2.327a1.8,1.8,0,0,1-1.484-.6c-0.322-.33-0.621-0.67-0.932-1.01a2.045,2.045,0,0,0-.419-0.37,0.486,0.486,0,0,0-.776.19,2.4,2.4,0,0,0-.246,1.08,0.614,0.614,0,0,1-.742.71,5.955,5.955,0,0,1-3.335-.71,7.386,7.386,0,0,1-2.245-2.09,28.058,28.058,0,0,1-2.953-5.23c-0.187-.42-0.05-0.64.407-0.65q1.141-.015,2.283,0a0.677,0.677,0,0,1,.633.47,13.723,13.723,0,0,0,1.546,2.85,2.445,2.445,0,0,0,.585.64,0.354,0.354,0,0,0,.6-0.18,1.929,1.929,0,0,0,.134-0.59,8.944,8.944,0,0,0-.037-2.1,0.889,0.889,0,0,0-.748-0.8c-0.223-.04-0.19-0.12-0.082-0.25a0.856,0.856,0,0,1,.715-0.35h2.634a0.626,0.626,0,0,1,.564.68l0,2.91a0.836,0.836,0,0,0,.372.74,0.518,0.518,0,0,0,.526-0.25,9.214,9.214,0,0,0,1.483-2.27c0.178-.36.332-0.73,0.48-1.1a0.571,0.571,0,0,1,.6-0.41l2.533,0.01a1.77,1.77,0,0,1,.23.01,0.438,0.438,0,0,1,.41.67,6.33,6.33,0,0,1-1.01,1.74c-0.42.58-.87,1.14-1.293,1.73a0.779,0.779,0,0,0,.123,1.26h0Z"
+                                          transform="translate(-986 -1646)"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="social">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13">
+                                    <path fill="#fff"
+                                          d="M1094.56,501.24a6.659,6.659,0,0,1-2.09.8,3.285,3.285,0,0,0-5.68,2.245,3.083,3.083,0,0,0,.09.748,9.327,9.327,0,0,1-6.77-3.43,3.3,3.3,0,0,0,1.02,4.382,3.313,3.313,0,0,1-1.49-.412v0.041a3.294,3.294,0,0,0,2.64,3.219,3.393,3.393,0,0,1-.87.115,3.341,3.341,0,0,1-.62-0.059,3.292,3.292,0,0,0,3.07,2.28,6.585,6.585,0,0,1-4.08,1.4,6.8,6.8,0,0,1-.78-0.045,9.334,9.334,0,0,0,14.37-7.865l-0.01-.425a6.666,6.666,0,0,0,1.64-1.7,6.567,6.567,0,0,1-1.88.517A3.344,3.344,0,0,0,1094.56,501.24Z"
+                                          transform="translate(-1079 -501)"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="social">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 16">
+                                    <path fill="#fff"
+                                          d="M1076.66,426l-2.16,0a3.716,3.716,0,0,0-3.99,3.937v1.816h-2.17a0.332,0.332,0,0,0-.34.326v2.631a0.332,0.332,0,0,0,.34.326h2.17v6.638a0.332,0.332,0,0,0,.34.326h2.83a0.332,0.332,0,0,0,.34-0.326v-6.638h2.54a0.332,0.332,0,0,0,.34-0.326v-2.631a0.335,0.335,0,0,0-.34-0.326h-2.54v-1.539c0-.74.18-1.116,1.19-1.116h1.45a0.332,0.332,0,0,0,.34-0.326v-2.443A0.332,0.332,0,0,0,1076.66,426Z"
+                                          transform="translate(-1068 -426)"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="social">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11">
+                                    <path fill="#fff" class="cls-1"
+                                          d="M1178.38,1645.94c-0.58-.67-1.65-0.94-3.68-0.94h-7.4c-2.08,0-3.16.29-3.74,1-0.56.7-.56,1.73-0.56,3.15v2.7c0,2.75.67,4.15,4.3,4.15h7.4c1.76,0,2.74-.24,3.37-0.83,0.65-.61.93-1.6,0.93-3.32v-2.7C1179,1647.65,1178.96,1646.62,1178.38,1645.94Zm-5.11,4.93-3.35,1.72a0.519,0.519,0,0,1-.24.05,0.5,0.5,0,0,1-.27-0.07,0.484,0.484,0,0,1-.25-0.43v-3.42a0.5,0.5,0,0,1,.25-0.43,0.522,0.522,0,0,1,.5-0.01l3.36,1.7a0.512,0.512,0,0,1,.28.45A0.5,0.5,0,0,1,1173.27,1650.87Z"
+                                          transform="translate(-1163 -1645)"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="develop">
+                            <div class="img-wrap">
+                                <img src="/images/wezom.png" alt="">
+                            </div>
+                            <div class="text-wrap">
+                                <span class="top">Разработка тестового</span>
+                                <span class="bottom">Wezom Agency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="/js/jquery.js"></script>
 <script src="/js/popup-slide.js"></script>
 <script src="/js/select2.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script src="/js/jquery.mask.min.js"></script>
 
 <script src="/js/index.js"></script>
 </body>

@@ -66,27 +66,40 @@ $(document).ready(function () {
     $(document).on('focus', '[id*="filter-"] input', function () {
         $('[id*="filter-"] input').ForceNumericOnly();
     });
+
     $(document).on('click touchend', '.item-compare', function () {
-        if (!$(this).parent().parent().hasClass('compared')) {
-            $(this).parent().parent().addClass('compared');
-            $(this).find('span').text('В сравнении');
-            compare_counter++;
-            if (compare_counter > 0) {
-                $('#comparison .counter').removeClass('hidden').text(compare_counter);
+        if (touchmoved !== true) {
+            if (!$(this).parent().parent().hasClass('compared')) {
+                $(this).parent().parent().addClass('compared');
+                $(this).find('span').text('В сравнении');
+                compare_counter++;
+                if (compare_counter > 0) {
+                    $('#comparison .counter').removeClass('hidden').text(compare_counter);
+                }
             }
         }
-    });
-    $(document).on('click touchend', '.item-favorite', function () {
-        if (!$(this).parent().parent().hasClass('in-favorite')) {
-            $(this).parent().parent().addClass('in-favorite');
-            $(this).find('span').text('В избранном');
-            favorite_counter++;
-            if (favorite_counter > 0) {
-                $('#favorites .counter').removeClass('hidden').text(favorite_counter);
-            }
-        }
+    }).on('touchmove', function () {
+        touchmoved = true;
+    }).on('touchstart', function () {
+        touchmoved = false;
     });
 
+    $(document).on('click touchend', '.item-favorite', function () {
+        if (touchmoved !== true) {
+            if (!$(this).parent().parent().hasClass('in-favorite')) {
+                $(this).parent().parent().addClass('in-favorite');
+                $(this).find('span').text('В избранном');
+                favorite_counter++;
+                if (favorite_counter > 0) {
+                    $('#favorites .counter').removeClass('hidden').text(favorite_counter);
+                }
+            }
+        }
+    }).on('touchmove', function () {
+        touchmoved = true;
+    }).on('touchstart', function () {
+        touchmoved = false;
+    });
 
     jQuery.fn.ForceNumericOnly =
         function () {
@@ -105,6 +118,17 @@ $(document).ready(function () {
                 }
             });
         };
-
-
+    $('#phone').mask("+38(099)999-99-99");
 });
+
+function recallSubmit() {
+    $.fancybox.close();
+    $.fancybox.open('Спасибо! Мы вам перезвоним!');
+}
+
+function letterSpam() {
+    $.fancybox.open('Вы успешно подписаны на рассылку!');
+    setTimeout(function () {
+        $.fancybox.close();
+    }, 2000);
+}
